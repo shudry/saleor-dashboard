@@ -2,7 +2,7 @@ FROM node:10
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm update && npm install
+RUN npm cache clean --force && npm install && npm update
 COPY . .
 ARG APP_MOUNT_URI
 #ARG API_URI
