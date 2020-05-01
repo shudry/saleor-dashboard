@@ -56,8 +56,8 @@ module.exports = (env, argv) => {
     devServer: {
       contentBase: path.join(__dirname, dashboardBuildPath),
       compress: true,
-      disableHostCheck: true,
       historyApiFallback: true,
+      disableHostCheck: true,
       hot: true,
       port: 9000
     },
